@@ -1,0 +1,17 @@
+# maven
+target/
+
+# generic
+.local/
+build/
+dist/
+bin/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
