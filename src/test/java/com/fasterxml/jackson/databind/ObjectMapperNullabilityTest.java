@@ -42,7 +42,7 @@ import com.fasterxml.jackson.databind.type.SimpleType;
  * about, except that their behavior regarding {@code null} input changed from
  * the 2.9 code base to the 2.10 code base according to their respective tag.
  * 
- * @author <a href="mailto:Kai.Kunstmann@kiwigrid.com">Kai Kunstmann</a>
+ * @author <a href="mailto:kai@ooch.de">Kai Kunstmann</a>
  */
 
 public class ObjectMapperNullabilityTest {
@@ -187,6 +187,7 @@ public class ObjectMapperNullabilityTest {
 	 * or {@link JsonProcessingException}s. It is the only method in the 2.9
 	 * code base to have done this.
 	 */
+	@Test
 	@Tag(ObjectMapperNullabilityTest.INCONSISTENT)
 	public void constructType_Class() {
 		final ObjectMapper mapper = new ObjectMapper();
